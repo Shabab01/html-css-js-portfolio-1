@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Shabab's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -14,14 +14,15 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Tools</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Certificates</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Md Shabab</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -30,15 +31,34 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Tools</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#Certificates" onclick="toggleMenu()">Certificates</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
+      <style>
+        .section__pic-container {
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .play-button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+        }
+      </style>
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Md Shabab profile picture" />
+        <img src="./assets/pic.jpg" alt="Shabab's profile picture" style="width: 100%; height: 100%; object-fit: cover;" 
+        onclick="window.open('https://www.youtube.com/channel/UCXc0K_y9GuTl6YBHCdKoidQ')"/>
+        <a onclick="window.open('https://www.youtube.com/channel/UCXc0K_y9GuTl6YBHCdKoidQ')" class="play-button">
+          <!-- Use your play button icon or an image here -->
+          ▶️
+        </a>
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -47,7 +67,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/RESUME.pdf')"
           >
             Download CV
           </button>
@@ -60,13 +80,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/md-shabab'"
-          />
+            onclick="window.open('https://www.linkedin.com/in/md-shabab')"
+            />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/Shabab01'"
+            onclick="window.open('https://github.com/Shabab01')"
           />
         </div>
       </div>
@@ -75,11 +95,13 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="circular-image">
           <img
-            src="./assets/about-pic.jpg"
+            src="./assets/about-pic.jpg" 
             alt="Profile picture"
             class="about-pic"
+            height="400px"
+            width="400px"
           />
         </div>
         <div class="about-details-container">
@@ -90,8 +112,8 @@
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Relevant Experience</h3>
-              <p>1 year <br />Data Analyst</p>
+              <h3>Hands-on Experience</h3>
+              <p>1 year <br />in Data Domain  </p>
             </div>
             <div class="details-container">
               <img
@@ -100,16 +122,19 @@
                 class="icon"
               />
               <h3>Education & Training</h3>
-              <p>B.Sc. Bachelors Degree<br />Data Science Course</p>
+              <p>Bachelor of Science<br />Data Science Course</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-                A Data Analyst passionate about combining data, storytelling, and kindness as a catalyst for social change and to make a positive difference in the community.
+                A Data Analyst  proficient in SQL, Python, Excel, and Power BI.
+                Known for transforming complex data into clear, actionable insights and uncovering trends to drive strategic decisions and business
+                innovation. Passionate about combining data, storytelling, and kindness as a catalyst for social change and to make a positive difference in the community.
             </p>
           </div>
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -118,8 +143,8 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
+      <p class="section__text__p1">Explore</p>
+      <h1 class="title">My Tools</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -133,18 +158,7 @@
                 />
                 <div>
                   <h3>MySQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Microsoft Excel</h3>
-                  <p>Experienced</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -155,17 +169,6 @@
                 />
                 <div>
                   <h3>Microsoft Power BI</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -176,7 +179,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Tableu</h3>
+                  <h3>Microsoft Excel</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -187,10 +190,22 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Python/Viz. Tools</h3>
+                  <h3>Python / Pandas</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python/Data Viz. Tools</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
             </div>
           </div>
           <div class="details-container">
@@ -203,7 +218,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Pandas/NumPy</h3>
+                  <h3>Pandas / NumPy</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -225,7 +240,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Tensorflow</h3>
+                  <h3>TensorFlow</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -240,6 +255,35 @@
                   <p>Intermediate</p>
                 </div>
               </article>
+
+            <!-- </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">ML-Ops</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git / Git-Hub</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Streamlit</h3>
+                  <p>Basic</p>
+                </div>
+              </article> -->
+
             </div>
           </div>
         </div>
@@ -259,74 +303,54 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
-                alt="Project 1"
+                src="./assets/da.png"
+                alt="Data analysis"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Medical Data Analysis - [ SQL ]</h2>
+            <h2 class="experience-sub-title project-title">Data Analysis</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Shabab01/Medical-Data-Analysis-SQL'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/posts/md-shabab_medical-data-history-sql-activity-7210320085842817024-DUwZ?utm_source=share&utm_medium=member_desktop'"
-              >
-                Live Demo
-              </button>
+                <img 
+                  src="./assets/arrow-right.png"
+                  alt="arrow-right" 
+                  class="next"
+                  onclick="location.href='da.html', target='_blank'">
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
-                alt="Project 2"
+                src="./assets/ml.png"
+                alt="machine Learning"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">EV Motors Analysis - [ Excel | Power BI ]</h2>
+            <h2 class="experience-sub-title project-title">Machine Learning</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Shabab01/Electric-Vehicle-Analysis-'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/posts/md-shabab_im-happy-to-share-this-electric-vehicles-activity-7194760611782619136-pLdj?utm_source=share&utm_medium=member_desktop'"
-              >
-                Live Demo
-              </button>
+              <img 
+                  src="./assets/arrow-right.png"
+                  alt="arrow-right" 
+                  class="next"
+                  onclick="location.href='ml.html', target='_blank'">
             </div>
           </div>
-          <div class="details-container color-container">
+          <!-- <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.jpg"
+                src="./assets/dl.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">IMDb Review Sentiment Analysis - [ Python ]</h2>
+            <h2 class="experience-sub-title project-title">Deep Learning</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Shabab01/IMDB-Review-sentiment-Analysis'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/posts/md-shabab_machinelearning-sentimentanalysis-lstm-activity-7205420658032353280-qaiA?utm_source=share&utm_medium=member_desktop'"
-              >
-                Live Demo
-              </button>
-            </div>
+              <img 
+              src="./assets/arrow-right.png"
+              alt="arrow-right" 
+              class="next"
+              onclick="location.href='dl.html', target='_blank'">
+              
+            </div> -->
           </div>
         </div>
       </div>
@@ -354,23 +378,44 @@
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
+            cursor: pointer;
           />
-          <p><a href="https://www.linkedin.com/in/md-shabab">LinkedIn</a></p>
+          <p><a onclick="window.open('https://www.linkedin.com/in/md-shabab')">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/certificates.jpg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+
+          />
+          <p><a onclick="location.href='ca.html', target='_blank'">Certificates</a></p>
         </div>
       </div>
     </section>
+
+    
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Tools</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Md Shabab. All Rights Reserved.</p>
+      <p>&#10024 Crafted with curiosity &#128640 &#169; 2024 Md Shabab</p>
     </footer>
     <script src="script.js"></script>
   </body>
